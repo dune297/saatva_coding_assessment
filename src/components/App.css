@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+html,
+body,
+#container {
+	height: 100%;
+	margin: 0;
+	font-family: "Questrial", sans-serif;
+}
+
+button { 
+	padding: 10px;
+	border: none;
+	outline: none;
+}	
+
+button:hover {
+	cursor: pointer;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.header,
+.content {
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
+
+.header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 7rem;
+}
+
+.cartDiv {
+	top: 0;
+	right: 0;
+	position: relative;
+}
+
+.cartIcon {
+	position: absolute;
+}
+
+.cartCount {
+ 	position: absolute;
+ 	color: white;
+ 	background-color: #d4aa63;
+ 	padding: 3px 5px 3px 6px;
+ 	margin-left: 10px;
+ 	border-radius: 100%;
+}
+
+.content {
+	background-color: #f6f5f3;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 12rem;
+	padding-top: 2rem;
+	flex-grow: 1;
+	align-items: stretch;
+}
+
+.carousel {
+	width: 60%;
+	height: 100%;
+}
+
+.imageContainer {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 center;
+}
+
+.infoWidget {
+	margin-left: 3rem;
+	width: 40%;
+	height: 100%;
+}
+
+.infoWidget > div {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.chooseHeader {
+	font-family: "Source Serif Pro", serif;
+	font-size: 2rem;
+	margin-top: 0;
+}
+
+.additionalInfo {
+	display: flex;
+	justify-content: space-between;
+}
+
+.selectedName {
+	display: flex;
+	flex-direction: column;
+	font-weight: 600;
+}
+
+.selectedRating {
+	display: flex;
+}
+
+.addToCartButton {
+	background-color: #d4aa63;
+	color: white;
+	width: 100%;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+}
+
+.addToCartButton:hover {
+	background-color: #bd9c65;
+}
+
+.buttonGroupHeader {
+	font-weight: 600;
+}
+
+.buttonWrapper {
+	display: flex;
+}
+
+.selectedButton,
+.unselectedButton {
+	text-align: center;
+	color: #a6a19a;
+	background-color: white;
+	border: 0.5px solid lightgray;
+	flex-grow: 1;
+}
+
+.selectedButton {
+	background-color: #a6a19a;
+	color: white;
+}
+
+.unselectedButton:hover {
+	background-color: #ece9e9;
+}
+
+@media screen and (max-width: 812px) {
+	.header {
+		padding-left: 2rem;
+		padding-right: 3rem;
+	}
+	.content {
+		flex-direction: column;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		padding-bottom: 0;
+	}
+	.carousel {
+		height: 50vw;
+		width: 100%;
+		margin-bottom: 1rem;	
+	}
+	.infoWidget {
+		width: 100%;
+		margin-left: 0;
+	}
+}
